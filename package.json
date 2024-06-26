@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint 'cypress/**/*.{ts,tsx,js,jsx}'",
-    "format": "prettier --write 'cypress/**/*.{ts,tsx,js,jsx,json,css,md}'"
+    "format": "prettier --write 'cypress/**/*.{ts,tsx,js,jsx,json,css,md}'",
+    "cy:open": "npx cypress open"
   },
   "keywords": [],
   "author": "",
