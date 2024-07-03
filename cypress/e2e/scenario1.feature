@@ -33,4 +33,4 @@ Feature: YMS
 
     When Alice clicks on button with text "Confirm"
 
-    Then A modal with text "Vehicle Added Successfully" appears
+    Then A modal with text "Vehicle Added Successful" appears
