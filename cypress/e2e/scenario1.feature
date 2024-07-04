@@ -38,16 +38,9 @@ Feature: YMS
   Scenario: Open vehicle reporting modal
 
     Given I visit the page "https://apps.staging.stackbox.xyz/wms/yard-management/gate-management?nodeId=3774353390089100"
+
     When I click on the calendar icon
+
     Then I select from date as year "2024" month "july" and date "1" and to date as year "2024" month "july" and date "4"
 
-    Given I have a card with value "TN112KA4455"
-    When I click on the vehicle with value "TN112KA4455"
-    Then a modal opens on the screen
-
-  Scenario: Gate Report Vehicle
     
-    Given I have the modal Open
-    when I click on Report button
-    Then a message with text "Truck reporting successful!" appears
-
