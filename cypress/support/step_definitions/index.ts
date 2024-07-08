@@ -6,7 +6,7 @@ Given('I visit the page {string}', (url: string) => {
 });
 
 Given(
-  'Alice enters form with placeholder {string} as {string} and {string} as {string}',
+  'I enter form with placeholder {string} as {string} and {string} as {string}',
   (
     placeholder1: string,
     placeholder1Value: string,

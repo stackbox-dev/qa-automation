@@ -5,7 +5,7 @@ Feature: YMS
     
     And I land on the page "https://apps.staging.stackbox.xyz/login"
   
-    When Alice enters form with placeholder "Enter your username" as "WMS4X-ADMIN1" and "Enter password" as "stackbox123"
+    When I enter form with placeholder "Enter your username" as "WMS4X-ADMIN1" and "Enter password" as "stackbox123"
 
     And Alice clicks on button with text "Login"
 

@@ -22,3 +22,5 @@ Feature: WMS
     Then I upload a file
 
     And I click on button with text "Upload ASN"
+
+    
