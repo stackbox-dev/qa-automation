@@ -20,11 +20,11 @@ Given(
   },
 );
 
-When('Alice clicks on button with text {string}', (buttonText: string) => {
+When('I click on button with text {string}', (buttonText: string) => {
   cy.contains('button', buttonText).click();
 });
 
-When('Alice clicks on the add vehicle button', () => {
+When('I click on the add vehicle button', () => {
   cy.get('div[role="button"].bg-primary').click();
 });
 
@@ -36,7 +36,7 @@ Then('A modal to {string} pops Up', (modelName: string) => {
 });
 
 Then(
-  'Alice selects the dropdown with label {string} with value {string}',
+  'I select the dropDown with label {string} with value {string}',
   (label: string, selectionValue: string) => {
     cy.contains('.my-8.inline-block', 'Add Vehicle')
       .contains('p', label)
@@ -48,7 +48,7 @@ Then(
 );
 
 Then(
-  'Alice selects the createSelectible dropdown with placeholder {string} with value {string}',
+  'I select the createSelectible dropdown with placeholder {string} with value {string}',
   (placeholderValue: string, selectionValue: string) => {
     cy.contains('p', placeholderValue)
       .parent()
