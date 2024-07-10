@@ -15,9 +15,9 @@ Given(
   },
 );
 
-When('I click on button with text {string}', (buttonText: string) => {
-  cy.contains('button', buttonText).click();
-});
+// When('I click on button with text {string}', (buttonText: string) => {
+//   cy.contains('button', buttonText).click();
+// });
 
 Then('I land on the page {string}', (url: string) => {
   cy.wait(1000);
