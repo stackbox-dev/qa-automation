@@ -1,0 +1,41 @@
+appId: com.stackbox.dev
+env:
+  OTP_DIGITS: '685633'
+  SEARCH_TEXT: 'ASNNUM000388'
+---
+- launchApp:
+    appId: com.stackbox.dev
+# tap on username
+# - tapOn:
+#     text: "PRODUCTION"
+#     index: 1
+- tapOn: 'Enter Login OTP'
+# enter username
+- inputText:
+    text: ${OTP_DIGITS}
+# hide keyboard
+- hideKeyboard
+# tap on password
+# - tapOn:
+#     text: "Password"
+#     index: 1
+# enter password
+# - inputText:
+#     text: "John Doe"
+# hide keyboard
+# - hideKeyboard
+# tap on sign in
+- tapOn: 'Login'
+
+- tapOn: 'View Activities'
+
+- tapOn: 'Receiving'
+
+# - tapOn: "Search Anything"
+
+# - inputText:
+#     text: ${SEARCH_TEXT}
+
+- tapOn: 'Truck ID: ASNNUM000388'
+# - tapOn: 'Truck ID: ${SEARCH_TEXT}'
+# - assertVisible: "Sign in successfully"

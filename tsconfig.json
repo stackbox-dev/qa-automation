@@ -1,6 +1,4 @@
 {
-  "display": "Default",
-  "include": ["./**/*.ts", "./**/*.d.ts"],
   "compilerOptions": {
     "allowJs": true,
     "composite": false,
@@ -23,5 +21,7 @@
     "typeRoots": ["./node_modules/@types"],
     "sourceMap": false,
     "types": ["cypress", "node"]
-  }
+  },
+  "display": "Default",
+  "include": ["./**/*.ts", "./**/*.d.ts", "cypress/**/*.ts"]
 }

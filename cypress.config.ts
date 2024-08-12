@@ -33,6 +33,7 @@ export default defineConfig({
     },
   },
   e2e: {
+    experimentalStudio: true,
     setupNodeEvents,
     specPattern: ['cypress/**/*.feature'],
     // specPattern: "cypress/e2e/**/*.cy.ts",

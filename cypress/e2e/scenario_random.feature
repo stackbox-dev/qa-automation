@@ -38,3 +38,40 @@
     And I click on the dropdown with the placeHolder "Select Associates" and select the value "Pritam_HULUAT1"
     
     And I click the button inside modal with name "Assign"
+
+
+
+
+
+                And I click on the Create Session
+        
+        And I upload a file with name "ASN_rg.xlsx"
+
+        Then I click the button inside modal with name "Upload ASN"
+
+        Then I select the columnName "ASN NO" with columnValue "ASN1022133"
+
+        And I click on button with text "Create Session"
+
+
+
+Scenario: 5th scenario Creating Internal Session
+
+
+                When I open the menuBar and select "Inbound" and click on "Inbound Order Tray"
+
+        And I click on the Create Session
+        
+        And I upload a file with name "ASN_rg.xlsx"
+
+        Then I click the button inside modal with name "Upload ASN"
+
+       Then I select the columnName "ASN NO" with columnValue "ASN1022138"
+
+        And I click on button with text "Create Session"
+
+        Given I select the tab with name "IN PROGRESS"
+
+        Then I select the columnName "ASN NO" with columnValue "ASN1022138"
+
+        And I click on the Work Order Management button

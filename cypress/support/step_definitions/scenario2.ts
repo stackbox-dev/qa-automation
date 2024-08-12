@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import { Given, Then, When } from '@badeball/cypress-cucumber-preprocessor';
 
 Given(
@@ -282,8 +284,11 @@ When('I click on the add file button', () => {
   });
 });
 
-Then('I upload a file', () => {
-  cy.get('input[type="file"]').selectFile('cypress/fixtures/ASN_Sample.xlsx', {
-    force: true,
-  });
+Then('I upload a file with name {string}', (fileName: string) => {
+  cy.get('input[type="file"]').selectFile(
+    `cypress/fixtures/${fileName}`,
+    {
+      force: true,
+    },
+  );
 });
